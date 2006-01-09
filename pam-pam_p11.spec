@@ -5,7 +5,7 @@ Version:	0.1.2
 Release:	1
 License:	LGPL v2.1+
 Group:		Libraries
-Source0:	http://www.opensc.org/files/pam_p11-%{version}.tar.gz
+Source0:	http://www.opensc.org/files/pam_p11/pam_p11-%{version}.tar.gz
 # Source0-md5:	de550f9d7cf921a7b8e35901e6bbfa25
 URL:		http://www.opensc.org/pam_p11/
 BuildRequires:	libp11-devel
