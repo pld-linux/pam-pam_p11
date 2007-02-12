@@ -1,5 +1,5 @@
 Summary:	PAM module for using cryptographic tokens
-Summary(pl):	Modu≥ PAM umoøliwiaj±cy uøywanie tokenÛw kryptograficznych
+Summary(pl.UTF-8):   Modu≈Ç PAM umo≈ºliwiajƒÖcy u≈ºywanie token√≥w kryptograficznych
 Name:		pam-pam_p11
 Version:	0.1.2
 Release:	1
@@ -23,9 +23,9 @@ pam_p11 is a plugable authentication module (PAM) package for using
 cryptographic tokens such as smart cards and USB crypto tokens for
 authentication.
 
-%description -l pl
-pam_p11 to modu≥ uwierzytelniaj±cy (PAM) umoøliwiaj±cy
-uwierzytelnianie przy uøyciu tokenÛw kryptograficznych, takich jak
+%description -l pl.UTF-8
+pam_p11 to modu≈Ç uwierzytelniajƒÖcy (PAM) umo≈ºliwiajƒÖcy
+uwierzytelnianie przy u≈ºyciu token√≥w kryptograficznych, takich jak
 karty procesorowe i tokeny kryptograficzne USB.
 
 %prep
