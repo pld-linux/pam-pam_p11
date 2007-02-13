@@ -1,5 +1,5 @@
 Summary:	PAM module for using cryptographic tokens
-Summary(pl.UTF-8):   Moduł PAM umożliwiający używanie tokenów kryptograficznych
+Summary(pl.UTF-8):	Moduł PAM umożliwiający używanie tokenów kryptograficznych
 Name:		pam-pam_p11
 Version:	0.1.2
 Release:	1
