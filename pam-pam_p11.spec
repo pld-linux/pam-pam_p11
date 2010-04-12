@@ -2,7 +2,7 @@ Summary:	PAM module for using cryptographic tokens
 Summary(pl.UTF-8):	Moduł PAM umożliwiający używanie tokenów kryptograficznych
 Name:		pam-pam_p11
 Version:	0.1.5
-Release:	1
+Release:	2
 License:	LGPL v2.1+
 Group:		Libraries
 Source0:	http://www.opensc-project.org/files/pam_p11/pam_p11-%{version}.tar.gz
