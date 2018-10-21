@@ -1,13 +1,14 @@
 Summary:	PAM module for using cryptographic tokens
 Summary(pl.UTF-8):	Moduł PAM umożliwiający używanie tokenów kryptograficznych
 Name:		pam-pam_p11
-Version:	0.1.6
-Release:	2
+Version:	0.2.0
+Release:	1
 License:	LGPL v2.1+
 Group:		Libraries
 #Source0Download: https://github.com/OpenSC/pam_p11/releases
 Source0:	https://github.com/OpenSC/pam_p11/releases/download/pam_p11-%{version}/pam_p11-%{version}.tar.gz
-# Source0-md5:	2198d5451654ca5c1736343544cc78f5
+# Source0-md5:	05ca327726120bd6cd31ac298691a762
+Patch0:		openssl-1.1.1.patch
 URL:		https://github.com/OpenSC/pam_p11
 BuildRequires:	libp11-devel >= 0.2.4
 BuildRequires:	openssl-devel >= 0.9.7d
@@ -32,6 +33,7 @@ karty procesorowe i tokeny kryptograficzne USB.
 
 %prep
 %setup -q -n pam_p11-%{version}
+%patch0 -p1
 
 %build
 %configure \
@@ -54,5 +56,4 @@ rm -rf $RPM_BUILD_ROOT
 %files
 %defattr(644,root,root,755)
 %doc NEWS
-%attr(755,root,root) /%{_lib}/security/pam_p11_opensc.so
-%attr(755,root,root) /%{_lib}/security/pam_p11_openssh.so
+%attr(755,root,root) /%{_lib}/security/pam_p11.so

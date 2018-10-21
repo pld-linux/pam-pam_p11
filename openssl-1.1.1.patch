@@ -1,0 +1,11 @@
+--- pam_p11-0.2.0/src/pam_p11.c~	2018-05-04 16:52:04.000000000 +0200
++++ pam_p11-0.2.0/src/pam_p11.c	2018-10-21 15:40:13.939277013 +0200
+@@ -590,7 +590,7 @@
+ 			|| !EVP_SignInit(md_ctx, md)
+ 			|| !EVP_SignUpdate(md_ctx, challenge, sizeof challenge)
+ 			|| !EVP_SignFinal(md_ctx, signature, &siglen, privkey)
+-			|| !EVP_MD_CTX_cleanup(md_ctx)
++			|| !EVP_MD_CTX_reset(md_ctx)
+ 			|| !EVP_VerifyInit(md_ctx, md)
+ 			|| !EVP_VerifyUpdate(md_ctx, challenge, sizeof challenge)
+ 			|| 1 != EVP_VerifyFinal(md_ctx, signature, siglen, pubkey)) {
